@@ -2,8 +2,8 @@ from Accuracy import *
 from WashData import *
 
 def main():
-    file = r'test.csv'
-    with open(file, encoding='utf-8') as f:
+    file = r'0316test2.csv'
+    with open(file, encoding='UTF-8') as f:
         data = np.loadtxt(f, str, delimiter=",")
         query_list = data[:, 0]  # original query
         res_list = data[:, 1]  # asr recognized result
