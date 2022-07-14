@@ -2,7 +2,7 @@ from Accuracy import *
 
 def main():
 
-    file = r'test.csv'
+    file = r'DataFile/test.csv'
     with open(file, encoding='utf-8') as f:
         data = np.loadtxt(f, str, delimiter=",")
         query_list = data[:, 0]  # original query
